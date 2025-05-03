@@ -1,0 +1,15 @@
+{
+  "welcome": {
+    "title": "Bienvenue sur notre portail!",
+    "description": "Nous sommes ravis de vous avoir parmi nous. Explorez nos fonctionnalités et profitez de votre expérience.",
+    "getStarted": "Commencer"
+  },
+  "login": {
+    "login": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "invalidCredentials": "Nom d'utilisateur ou mot de passe invalide",
+    "submit": "Soumettre"
+  },
+  "top10Products": "Top 10 Produits"
+}

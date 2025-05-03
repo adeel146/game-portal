@@ -1,0 +1,85 @@
+:root {
+  /* Palette */
+  --color-primary: #0f766e;
+  --color-primary-hover: #115e59;
+  --color-secondary: #64748b;
+  --color-secondary-hover: #475569;
+  --color-success: #16a34a;
+  --color-success-hover: #15803d;
+  --color-disabled-bg: #e2e8f0;
+  --color-disabled-text: #94a3b8;
+  --color-white: #ffffff;
+  --color-dark: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #d1d5db;
+  --color-brand: #0369a1;
+  --color-bg-card: #f0fdfa;
+  --color-bg-detail: #ecfdf5;
+  --color-description: #334155;
+  --color-price: #0ea5e9;
+  --color-discount: #dc2626;
+  --color-availability: #16a34a;
+  --color-rating: #2563eb;
+  --color-tag-bg: #e0f2fe;
+  --color-tag: #0f766e;
+
+  /* Shadows */
+  --shadow-base: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 2px 8px rgba(13, 148, 136, 0.1);
+  --shadow-card-hover: 0 6px 18px rgba(13, 148, 136, 0.2);
+
+  /* Button */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-hover-bg: var(--color-primary-hover);
+  --button-secondary-bg: var(--color-secondary);
+  --button-secondary-hover-bg: var(--color-secondary-hover);
+  --button-success-bg: var(--color-success);
+  --button-success-hover-bg: var(--color-success-hover);
+  --button-disabled-bg: var(--color-disabled-bg);
+  --button-disabled-text-color: var(--color-disabled-text);
+  --button-text-color: var(--color-white);
+  --button-small-padding: 6px 14px;
+  --button-medium-padding: 10px 20px;
+  --button-large-padding: 14px 28px;
+  --button-radius: 6px;
+
+  /* Card */
+  --card-bg: var(--color-bg-card);
+  --card-border: var(--color-border);
+  --card-radius: 10px;
+  --card-shadow: var(--shadow-card);
+  --card-hover-shadow: var(--shadow-card-hover);
+  --card-title-color: var(--color-dark);
+  --card-brand-color: var(--color-muted);
+  --card-description-color: var(--color-description);
+  --card-price-color: var(--color-price);
+  --card-discount-color: var(--color-discount);
+  --card-availability-color: var(--color-availability);
+  --card-rating-color: var(--color-rating);
+  --card-tag-bg: var(--color-tag-bg);
+  --card-tag-color: var(--color-tag);
+
+  /* Detail */
+  --detail-bg: var(--color-bg-detail);
+  --detail-text: var(--color-dark);
+  --detail-muted: var(--color-muted);
+  --detail-border: var(--color-border);
+  --detail-tag-bg: var(--color-tag-bg);
+  --detail-tag-color: var(--color-brand);
+  --detail-price-color: var(--color-price);
+  --detail-discount-color: var(--color-discount);
+  --detail-availability-color: var(--color-availability);
+  --detail-radius: 14px;
+  --detail-shadow: var(--shadow-base);
+  --detail-hover-shadow: var(--shadow-hover);
+
+  /* NavBar */
+  --navbar-bg: var(--color-white);
+  --navbar-text-color: var(--color-dark);
+  --navbar-hover-color: var(--color-brand);
+  --navbar-padding: 1rem 2rem;
+  --navbar-logo-height: 40px;
+
+  --transition: all 0.3s ease-in-out;
+}
