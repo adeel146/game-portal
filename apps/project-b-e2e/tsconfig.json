@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "out-tsc/cypress",
+    "baseUrl": ".",
     "allowJs": true,
     "types": ["cypress", "node"],
     "sourceMap": false
@@ -22,5 +23,10 @@
     "eslint.config.js",
     "eslint.config.cjs",
     "eslint.config.mjs"
+  ],
+  "references": [
+    {
+      "path": "../../libs/core/constants"
+    }
   ]
 }

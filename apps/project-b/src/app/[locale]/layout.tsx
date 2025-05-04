@@ -2,6 +2,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import './global.css';
+import  '@game-portal/ui/styles';
 import '../../configurations/variables.css';
 import { Providers } from '../providers';
 import NavWrapper from '../components/NavWrapper';

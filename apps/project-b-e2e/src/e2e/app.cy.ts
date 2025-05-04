@@ -1,13 +1,46 @@
-import { getGreeting } from '../support/app.po';
+import login from '../pages/login.js';
+import dashboard from '../pages/dashboard.js';
+import { users } from '@game-portal/constants';
 
-describe('@game-portal/project-b-e2e', () => {
-  beforeEach(() => cy.visit('/'));
+const username = users[0].username;
+const password = users[0].password;
+describe('project-b-e2e test suit', () => {
 
-  it('should display welcome message', () => {
-    // Custom command example, see `../support/commands.ts` file
-    cy.login('my-email@something.com', 'myPassword');
+  beforeEach(()=>{
+    cy.visit('/')
+    login.verifyHomePageIsLoaded();
+  })
 
-    // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains(/Welcome/);
+  it('Verify user is able to login and navigate on the dashboard page succesfully', () => {
+    login.clickOnLoginButton();
+    login.verifyLoginFormIsDisplayed();
+    login.typeInUsernameInputField(username);
+    login.typePassword(password);
+    login.clickSubmitButton();
+    dashboard.verifyDashboardIsDisplayedSuccessfully();
+  });
+  it('Verify product detail after login', () => {
+    login.clickOnLoginButton();
+    login.verifyLoginFormIsDisplayed();
+    login.typeInUsernameInputField(username);
+    login.typePassword(password);
+    login.clickSubmitButton();
+    dashboard.verifyDashboardIsDisplayedSuccessfully();
+    dashboard.clickOnProduct();
+    dashboard.verifyProductDetail();
+  });
+  it('Verify product detail before login', () => {
+    login.clickOnProductTab();
+    dashboard.clickOnProduct();
+    dashboard.verifyProductDetail();
+  });
+  it('Verify user is able to logout and navigate on the home page', () => {
+    login.clickOnLoginButton();
+    login.verifyLoginFormIsDisplayed();
+    login.typeInUsernameInputField(username);
+    login.typePassword(password);
+    login.clickSubmitButton();
+    dashboard.verifyDashboardIsDisplayedSuccessfully();
+    dashboard.clickOnLogoutButton();
   });
 });
